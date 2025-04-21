@@ -1,0 +1,393 @@
+/* 🟢 GENERALES */
+body {
+    font-family: "Poetsen One", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    margin: 10px;
+  }
+  h1 {
+    border: #239b56 solid 5px;
+    border-radius: 50px;
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  
+  /* 🟢 NAVBAR Y HERO */
+  #home {
+    color: white;
+  }
+  .hero {
+    background-size: auto;
+    color: black;
+  }
+
+  .navbar {
+    background: linear-gradient(90deg, #186a3b, #239b56, #2ecc71);
+    color: #616a6b;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    position: relative;
+  }
+  .nav-links li a:hover {
+    color: #00bcd4;
+  }
+  .nav-links .donar-btn {
+    background-color: #00bcd4;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  .nav-links .donar-btn:hover {
+    background-color: #019caf;
+  }
+  .menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+  }
+  #menu-toggle {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #1f1f1f;
+      width: 100%;
+      padding: 1rem 0;
+    }
+    .nav-links li {
+      text-align: center;
+      margin: 0.5rem 0;
+    }
+    #menu-toggle:checked + .menu-icon + .nav-links {
+      display: flex;
+    }
+    .menu-icon {
+      display: block;
+    }
+  }
+  
+  /* 🟢 FOOTER */
+  .footer {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-logo img {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #00bcd4;
+  }
+  
+  .footer-links .donar-footer {
+    color: #00bcd4;
+    font-weight: bold;
+  }
+  
+  .footer-social {
+    margin: 1rem 0;
+  }
+  
+  .footer-social a {
+    margin: 0 0.5rem;
+    display: inline-block;
+    transition: transform 0.3s;
+  }
+  
+  .footer-social a:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer-copy {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 1rem;
+  }
+  
+  /* 🟢 SECCIONES: Donar, Contacto, Quiénes Somos, Ubicación */
+  #donar {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  #contacto {
+    border: #239b56 solid 5px;
+    border-radius: 40px;
+    margin: 10px;
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  #quienessomos {
+    border: #239b56 solid 5px;
+    border-radius: 40px;
+    margin: 10px;
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  #ubicacion {
+    border: #239b56 solid 5px;
+    border-radius: 40px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+  }  
+
+  /* 🟢 Maratón */
+/* ======= Estilo General del Bloque ======= */
+#maraton {
+    animation: fadeIn 0.7s ease-in-out;
+    background-color: #fdfdfd;
+    padding: 3rem 2rem;
+    margin: 3rem auto;
+    max-width: 1200px;
+    border: 5px solid #239b56;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+/* Títulos principales */
+#maraton h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #0d47a1;
+  margin-bottom: 2rem;
+}
+
+/* Subtítulos */
+#maraton h3 {
+  color: #1f1f1f;
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Secciones individuales */
+#maraton .distancia,
+#maraton .entrada,
+#maraton .preparacion,
+#maraton .comiezo {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow:0px 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Lista dentro de preparación y 5km */
+#maraton li {
+  margin-left: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Botón de entrada */
+.entrada-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #00bcd4;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.entrada-btn:hover {
+  background-color: #0097a7;
+}
+
+/* Responsive (para pantallas pequeñas) */
+@media (max-width: 768px) {
+  #maraton {
+    padding: 2rem 1rem;
+  }
+
+  #maraton h2 {
+    font-size: 1.6rem;
+  }
+
+  #maraton h3 {
+    font-size: 1.2rem;
+  }
+}
+
+.opciones-km {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.tarjeta-km {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 2rem;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-km:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta-km h2 {
+  color: #0d47a1;
+  font-size: 1.8rem;
+}
+
+.tarjeta-km h3 {
+  color: #009688;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.tarjeta-km ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.tarjeta-km li {
+  margin-bottom: 0.5rem;
+}
+
+.entrada-btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background-color: #00bcd4;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.entrada-btn:hover {
+  background-color: #0097a7;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .tarjeta-km {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+
+  /* 🟢 DONAR: Estilo específico */
+  .donacion {
+    display: inline-block;
+    background-color: #f8f9fa;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 5px solid #239b56;
+    border-radius: 40px;
+    padding: 2rem;
+    margin: 20px auto; 
+    text-align: center;
+  }
+  .donar {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .donar img {
+    width: 28%;
+    height: auto;
+    border-radius: 40px;
+  }  
+
+  /* 🟢 IFRAME (MAPA) */
+  iframe {
+    border-radius: 40px;
+  }
+  
+  /* 🟢 LAYOUT FLEXIBLE ENTRE SECCIONES */
+  .secciones-superiores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .seccion {
+    flex: 1;
+    min-width: 300px;
+  }
+  
